@@ -15,9 +15,9 @@ public class GlobalExceptionHandler {
 
         }
 
-        @ExceptionHandler(NotEnoughAmountExecption.class)
+        @ExceptionHandler(NotEnoughAmountException.class)
         @ResponseStatus(code = HttpStatus.NOT_FOUND)
-        public String NotEnoughAmount(NotEnoughAmountExecption ex){
+        public String NotEnoughAmount(NotEnoughAmountException ex){
             return ex.getMessage();
         }
 
